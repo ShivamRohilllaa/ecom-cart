@@ -1,0 +1,289 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% block title %} {% endblock%}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../devitems.com/html/raptas-preview/raptas/img/favicon.html" />
+    <!-- Place favicon.ico in the root directory -->
+    <!-- all css here -->
+    <!-- Bootstrap v3.3.6 css -->
+    <link rel="stylesheet" href="{% static 'shop/css/bootstrap.min.css'%}">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="{% static 'shop/css/animate.css'%} ">
+    <!-- jQuery-ui.min css -->
+    <link rel="stylesheet" href="{% static 'shop/css/jquery-ui.min.css'%}">
+    <!-- Owl carousel css -->
+    <link rel="stylesheet" href="{% static 'shop/css/owl.carousel.css'%}">
+    <!-- Font-awesome css -->
+    <link rel="stylesheet" href="{% static 'shop/css/font-awesome.min.css' %} ">
+    <!-- Material design iconic css -->
+    <link rel="stylesheet" href="{% static 'shop/css/material-design-iconic-font.min.css' %">
+    <!-- Nivo Slider css -->
+    <link rel="stylesheet" href="{% static 'shop/css/nivo-slider.css' %">
+    <!--Slider css -->
+    <link rel="stylesheet" href="{% static 'shop/css/slider.css' %">
+    <!-- Default css -->
+    <link rel="stylesheet" href="{% static 'shop/css/default.css' %">
+    <!-- Mean menu css -->
+    <link rel="stylesheet" href="{% static 'shop/css/meanmenu.css' %}">
+    <!-- Main style css -->
+
+    <link rel="stylesheet" href="{% static 'shop/style.css' %}">
+    <link rel="stylesheet" href="{% static 'shop/custom.css' %}">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="{% static 'shop/css/responsive.css' %} ">
+    <!-- modernizr css -->
+    <script src="{% static 'shop/js/vendor/modernizr-2.8.3.min.js' %}"></script>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header-area">
+        <div class="header-topbar-area-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="header-login posr">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <ul class="header-social-icon text-right">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="mailto:sagarinternational.india@gmail.com"><i class="fa fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-9 col-xs-6 phone-767">
+                        <div class="header-whishlist">
+                            <div class="header-middle-phone">
+                                <span><a href="tel:+91-958-222-2571" style="color: #fff;"><i class="fa fa-phone"></i>   +91-9582222571</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 social-hide-767">
+                        <div class="main-cart-area  cart-sticky-display posr">
+                            <ul class="header-social-icon text-right">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="mailto:sagarinternational.india@gmail.com"><i class="fa fa-envelope"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--header main menu start-->
+
+        <div id="sticky-header" class="main-menu-wrapper hp1-menu header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="header-logo">
+                            <a href="index.html"><img src="{% static 'shop/img/logo.png' %}" alt="" />
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9 hidden-xs">
+                        <nav>
+                            <ul class="main-menu">
+                                <li class="active"><a href="index.html" target="_blank">Home </a>
+
+                                </li>
+                                <li class="mega-parent"><a href="./about">About Us </a>
+                                </li>
+                                <li class="mega-parent"><a href="./productView">Products <i class="zmdi zmdi-chevron-down"></i></a>
+                                </li>
+                                <li><a href="infra.html">Infrastructure </a>
+                                </li>
+                                <li><a href="./enquiry.html">Enquiry</a>
+                                </li>
+                                <li><a href="./contact">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="mobile-menu-area hp1-mobile-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <nav class="active-mobile-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a>
+                                </li>
+                                <li><a href="about.html">About Us</a>
+                                </li>
+                                <li><a href="shop.html">Products</a>
+                                </li>
+                                <li><a href="infra.html">Infrastructure </a>
+                                </li>
+
+                                <li><a href="enquiry.html">Enquiry</a>
+                                </li>
+                                <li><a href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    {% block body %}
+
+    {% endblock %}
+
+    <div class="whatsapp_api">
+        <a target="new" href="https://api.whatsapp.com/send?phone= +91-9582222571&amp;text=Hello, I want to know more about your products." class="float"><img src="{% static 'shop/images/whatsapp.png'%}" alt="whatsapp"></a>
+    </div>
+
+    <div class="main-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-6 col-xs-12">
+                    <div class="logo_footer">
+                        <img src="{% static 'shop/img/logo.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-content-wrapper">
+                        <div class="footer-content">
+                            <div id="f-about" class="footer-title def-funderline ftitle-about posr">
+                                <h5 class="active-about">About us</h5>
+                            </div>
+                            <div class="footer-text">
+                                <p>We are a company that really believes in what we do, and cares the utmost about whom we work for. That’s why, like millions of people who choose Relaxo, we continue to move forward.</p>
+                                <!-- <div class="footer-readmore"><a href="about.html">Read more</a>
+                                </div> -->
+                            </div>
+
+                            <ul class="footer-social-icon">
+                                <li><a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                                </li>
+                                <li><a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                                </li>
+                                <li><a href="mailto:sagarinternational.india@gmail.com"><i class="zmdi zmdi-email"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="footer-list-wrapper">
+                        <div id="f-cussve" class="footer-title def-funderline def-funderline2 ftitle-cus posr">
+                            <h5 class="active">Contact Details</h5>
+                        </div>
+                        <ul class="footer-list-text jscroll-cussrve">
+                            <li><a href="https://goo.gl/maps/7gyZgdnCz6azxV3r7"><i class="zmdi zmdi-pin"></i>Plot No. 77, M.I.E. Part-A, Bahadurgarh, Haryana-124507</a>
+                            </li>
+                            <li>
+                                <i class="zmdi zmdi-phone"></i>
+                                <a href="tel:+91-958-222-2571">+91-9582222571, </a> <a href="+91-958-222-2570"> +91-9582222570</a>
+                            </li>
+                            <li>
+                                <a href="mailto: sagarinternational.india@gmail.com"><i class=" zmdi zmdi-email "></i> sagarinternational.india@gmail.com</a>
+                            </li>
+                            <li>
+                                <a href="tel:1276-267077"><i class=" zmdi zmdi-phone "></i> 1276-267077</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom-area ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-8 col-sm-6 col-xs-12 footer-bottom-left ">
+                    <div class="footer-bottom-text ">
+                        <p>Copyright <i class="fa fa-copyright "></i> <a href="# " target="_blank ">Oxer Footwear</a> All Rights Reserved</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 footer-bottom-right ">
+                    <div class="footer-bottom-text ">
+                        <p>Designed By:- <a href="http://www.uniquedzine.com/ " target="_blank ">Unique Dzine</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="to-top posr ">
+        <a href="# "><i class="zmdi zmdi-arrow-merge "></i></a>
+    </div>
+    <!-- QUICKVIEW PRODUCT -->
+
+
+    <!-- END QUICKVIEW PRODUCT -->
+
+    <!-- all js here -->
+    <!-- jquery latest version -->
+    <script src="{% static 'shop/js/vendor/jquery-1.12.0.min.js'%} "></script>
+    <!-- bootstrap js -->
+    <script src="{% static 'shop/js/bootstrap.min.js'%} "></script>
+    <!-- owl.carousel js -->
+    <script src="{% static 'shop/js/owl.carousel.min.js'%} "></script>
+    <!-- meanmenu js -->
+    <script src="{% static 'shop/js/jquery.meanmenu.js' %} "></script>
+    <!-- jquery-ui js -->
+    <script src="{% static 'shop/js/jquery-ui.min.js'%} "></script>
+    <!-- wow js -->
+    <script src="{% static 'shop/js/wow.min.js'%} "></script>
+    <!-- plugins js -->
+    <script src=" {% static 'shop/js/plugins.js' %} "></script>
+    <!-- Nivo slider pack js -->
+    <script src="{% static 'shop/js/slider/jquery.nivo.slider.pack.js'%} "></script>
+    <!-- fancybox js -->
+    <script src="{% static 'shop/js/jquery.fancybox.js'%} "></script>
+    <!-- Nivo active js -->
+    <script src="{% static 'shop/js/slider/nivo-active.js'%} "></script>
+    <!-- counter up js -->
+    <script src="{% static 'shop/js/jquery.counterup.min.js'%} "></script>
+    <!-- Treeview js -->
+    <script src="{% static 'shop/js/jquery.treeview.js'%} "></script>
+    <!-- Google Map API js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-IIoucJ-70FQg6xZsORjQCUPHCVj9GV4 "></script>
+    <!-- Google Map js -->
+    <script src="{% static 'shop/js/google-map.js'%} "></script>
+    <!-- main js -->
+    <script src="{% static 'shop/js/main.js' %} "></script>
+
+</body>
+
+</html>

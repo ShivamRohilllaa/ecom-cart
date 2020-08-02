@@ -1,0 +1,29 @@
+{% extends 'shop/basic.html' %} 
+{% block title %} All Blogs Here {% endblock %}
+
+{% block body %} {% load static %}
+
+<div class="container">
+<div class="row">
+{% for item in myposts %}
+<div class="col-lg-4">
+ <div class="card" style="width: 18rem;">
+  <img src="/media/{{item.thumbnail}}" class="bd-placeholder-img" width="auto" height="200"
+                        aria-label="Placeholder: Thumbnail"/>
+  <div class="card-body">
+    <h5 class="card-title"> {{item.title}} </h5>
+    <p class="card-text">{{item.chead0  }}</p>
+     <a href="blogpost/{{item.post_id}}"><button class="btn btn-primary cart">Read More</button></a>
+
+  </div>
+</div>
+</div>
+ {% endfor %}
+</div>
+</div>
+
+
+
+
+
+{% endblock %}
